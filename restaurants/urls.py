@@ -1,7 +1,13 @@
 from django.urls import path, include
 from rest_framework import routers
 
-from restaurants.views import MenuViewSet, RestaurantViewSet, DrinkViewSet, DishViewSet, VoteViewSet
+from restaurants.views import (
+    MenuViewSet,
+    RestaurantViewSet,
+    DrinkViewSet,
+    DishViewSet,
+    VoteViewSet,
+)
 
 router = routers.DefaultRouter()
 router.register("menus", MenuViewSet)

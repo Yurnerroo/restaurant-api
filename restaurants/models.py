@@ -43,15 +43,16 @@ class Menu(models.Model):
         return f"{self.restaurant.name}'s menu"
 
     class Meta:
-        ordering = ["-votes", "date_created"]   # ordering by "-votes" means menu's rating
+        ordering = [
+            "-votes",
+            "date_created",
+        ]  # ordering by "-votes" means menu's rating
 
 
 class Vote(models.Model):
     user_id = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        null=True
-        )
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True
+    )
     menu_id = models.ForeignKey(Menu, on_delete=models.CASCADE)
 
     class Meta:

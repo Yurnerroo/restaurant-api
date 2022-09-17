@@ -11,7 +11,7 @@ from restaurants.serializers import (
     DishSerializer,
     MenuSerializer,
     RestaurantSerializer,
-    VoteSerializer
+    VoteSerializer,
 )
 
 
