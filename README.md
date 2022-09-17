@@ -18,6 +18,11 @@ python manage.py runserver
 docker-compose build
 docker-compose up
 ```
+## For authorization:
+```
+create user on /api/employee/register/
+get token on /api/employee/token/
+```
 ## Features
 - Swagger documentation
 - JWT authentication
